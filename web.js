@@ -7,7 +7,7 @@ var fs = require('fs');
 var msg = fs.readFile("index.html", "utf-8");
 
 app.get('/', function(request, response) {
-  response.send('Hello World!');
+  response.send(msg);
 });
 
 var port = process.env.PORT || 5000;
