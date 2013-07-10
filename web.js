@@ -3,8 +3,8 @@ var app = express.createServer(express.logger());
 
 var fs = require('fs');
 
-var buffer = new Buffer(30);
-buffer.write(fs.readFile("index.html"), "utf-8")
+//var buffer = new Buffer(30);
+//buffer.write(fs.readFile("index.html"), "utf-8")
 
 
 var msg = fs.readFileSync('index.html', 'utf-8');
