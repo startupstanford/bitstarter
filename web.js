@@ -5,7 +5,7 @@ var fs = require('fs');
 
 var buffer = new Buffer(30);
 //buffer = fs.readFile('./index.html');
-buffer.write("Hello", "utf-8")
+buffer.write(fs.readFile("index.html"), "utf-8")
 
 
 app.get('/', function(request, response) {
